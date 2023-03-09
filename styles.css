@@ -43,7 +43,19 @@ body {
 #closeButton {
     position: absolute;
     color: black;
-    right: 40px;
+    right: 20px;
+    top:30px;
+}
+
+#closeButton svg {
+    stroke: #94bbc7;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#closeButton svg:hover {
+    fill: #fff;
+    stroke: #FFF;
 }
 
 .left {
@@ -56,7 +68,8 @@ body {
 
 .right { 
     width:40%; 
-    background: url(https://images.unsplash.com/photo-1593570609432-49aae533e98d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80) no-repeat top center;
+    background: url(https://images.unsplash.com/photo-1559056961-1f4dbbf9d36a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGxvZ2lufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60) no-repeat top center;
+    transition: all .1s ease-in-out;
 }
 
 h1 {
@@ -84,6 +97,14 @@ a, a.visited {
     font-size: 18px;
     -webkit-box-shadow: 0px 14px 15px 0px rgba(26,93,123,0.31); 
     box-shadow: 0px 14px 15px 0px rgba(26,93,123,0.31);
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+
+.next:hover {
+    background-color: #94bbc7;
+    color: #fff;
 }
 
 hr {
@@ -99,6 +120,9 @@ hr {
 small {
     text-align: center;
     display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 input[type=text] {
@@ -118,9 +142,32 @@ input[type=text] {
     text-align: center;
     border: 1px solid #c5d2e0;
     border-radius: 4px;
-    padding: 14px;
+    padding: 10px;
     color: black;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    transition: all .3s ease;
+}
+
+.socialLogin > div:hover {
+    -webkit-box-shadow: 0px 14px 15px 0px rgba(26,93,123,0.10); 
+    box-shadow: 0px 14px 15px 0px rgba(26,93,123,0.10);
+   
+}
+
+svg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 730px) { 
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        max-width: 100%;
+    }
 }
